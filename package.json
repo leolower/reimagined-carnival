@@ -1,0 +1,44 @@
+{
+	"name": "@makerdao-cdp-insurance/client",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Maker DAO CDP-Insurance client library",
+	"license": "GPL-3.0-or-later",
+	"files": [
+		"lib",
+		"types"
+	],
+	"main": "lib/index.js",
+	"module": "lib/index.mjs",
+	"browser": "lib/index.umd.js",
+	"types": "types/index.d.ts",
+	"dependencies": {
+		"ms": "^2.1.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.4.3",
+		"@babel/plugin-proposal-class-properties": "^7.4.0",
+		"@babel/plugin-proposal-object-rest-spread": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
+		"@babel/preset-typescript": "^7.3.3",
+		"@types/jest": "^24.0.11",
+		"@types/ms": "^0.7.30",
+		"babel-jest": "^24.7.1",
+		"jest": "^24.7.1",
+		"lint-staged": "^8.1.5",
+		"prettier": "1.17.0",
+		"rollup": "^1.10.0",
+		"rollup-plugin-babel": "^4.3.2",
+		"rollup-plugin-cleanup": "^3.1.1",
+		"rollup-plugin-commonjs": "^9.3.4",
+		"rollup-plugin-json": "^4.0.0",
+		"rollup-plugin-node-resolve": "^4.2.3",
+		"tslint": "^5.15.0",
+		"tslint-config-prettier": "^1.18.0",
+		"typescript": "^3.4.3",
+		"web3": "^1.0.0-beta.52"
+	},
+	"peerDependencies": {
+		"web3": "^1.0.0-beta.52"
+	}
+}
