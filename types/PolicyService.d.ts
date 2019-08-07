@@ -1,6 +1,6 @@
 import BN from 'bn.js';
 import Web3 from 'web3';
-import { EventOptions } from 'web3-eth-contract/types';
+import { EventOptions } from 'web3-eth-contract';
 import SmartContract from './SmartContract';
 export interface CdpProtection {
     cdpId: number;
@@ -28,10 +28,11 @@ export interface EventData {
 export declare class PolicyService extends SmartContract {
     static build(web3: Web3): Promise<PolicyService>;
     getActiveProtections(options?: EventOptions): Promise<CdpProtection[]>;
-    getActivationEvents(options?: any): Promise<EventData[]>;
+    getActivatedEvents(options?: EventOptions): Promise<EventData[]>;
     getChangeEvents(options?: any): Promise<EventData[]>;
     getCancellationEvents(options?: any): Promise<EventData[]>;
     getEraseEvents(options?: any): Promise<EventData[]>;
     getExecutionEvents(options?: any): Promise<EventData[]>;
+    protectionPrice(cdpId: number, debt: number, duration?: number): Promise<any>;
 }
 export default PolicyService;
