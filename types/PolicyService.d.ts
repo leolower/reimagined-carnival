@@ -34,5 +34,6 @@ export declare class PolicyService extends SmartContract {
     getEraseEvents(options?: any): Promise<EventData[]>;
     getExecutionEvents(options?: any): Promise<EventData[]>;
     protectionPrice(cdpId: number, debt: number, duration?: number): Promise<any>;
+    getAvailableFunds(): Promise<any>;
 }
 export default PolicyService;
