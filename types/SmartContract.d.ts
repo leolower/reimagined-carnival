@@ -9,7 +9,7 @@ interface ContractOptions {
     web3: Web3;
 }
 export declare abstract class SmartContract {
-    protected static configure({ contractName, abi, networks: artifacts }: ContractArtifact): (web3: any) => Promise<ContractOptions>;
+    protected static configure({ contractName, abi, networks: artifacts }: ContractArtifact): (web3: Web3) => Promise<ContractOptions>;
     readonly address: string;
     readonly networkType: 'main' | 'morden' | 'ropsten' | 'rinkeby' | 'kovan' | 'private';
     readonly initialBlock: number;

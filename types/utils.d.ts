@@ -1,2 +1,2 @@
-export declare const toBytes32: (x: any, prefix?: boolean) => any;
-export declare function fromDecimal(value: number): any;
+export declare const toBytes32: (x: any, prefix?: boolean) => string;
+export declare function fromDecimal(value: number): string;
